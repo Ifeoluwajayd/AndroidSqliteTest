@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Name"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/surname"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Surname"
+        android:layout_below="@+id/Name"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/marks"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Mark"
+        android:layout_below="@+id/Surname"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/Name"
+        android:layout_marginStart="10dp"
+        android:id="@+id/blankName"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/Surname"
+        android:layout_below="@+id/blankName"
+        android:layout_marginStart="10dp"
+        android:id="@+id/blankSurname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/Mark"
+        android:layout_below="@+id/blankSurname"
+        android:id="@+id/blankMark"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_data"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/Mark"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/addData"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/download_data"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_toEndOf="@+id/addData"
+        android:layout_below="@id/Mark"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="40dp"
+        android:id="@+id/downloadData"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MySqlTest</string>
+    <string name="name">Name</string>
+    <string name="marks">Marks</string>
+    <string name="surname">Surname</string>
+    <string name="add_data">ADD DATA</string>
+    <string name="download_data">Download Data</string>
+</resources>
